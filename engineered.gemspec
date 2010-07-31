@@ -5,8 +5,8 @@ Gem::Specification.new do |s|
   s.name    = 'engineered'
   s.version = Engineered::VERSION
 
-  s.summary     = 'Stack up your Rails 3 engines'
-  s.description = 'Provides a small layer to build Rails 3 engines such a way, where you can easily bundle them up to your master app.'
+  s.summary     = 'Enables assets to your gemified Rails 3 engine'
+  s.description = 'Rails 3 engine will be "engineered" when you can include gem into your application Gemfile without much extra work, maintenance or conflicts. "Engineered" gem provides some groundwork for this scenario such as common app/stylesheets and app/javascripts what will be compiled into public directory using Sass and Sprockets, so no more manual copying any more. More info at readme.'
   s.authors     = ['Priit Tamboom']
   s.email       = 'priit@mx.ee'
   s.homepage    = 'http://github.com/priit/engineered'
