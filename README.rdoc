@@ -1,4 +1,4 @@
-== Engineered
+= Engineered
 
 Rails 3 engine will be "engineered" when you can include gem into your
 application Gemfile without much extra work, maintenance or conflicts. 
