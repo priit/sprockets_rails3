@@ -5,8 +5,7 @@ application Gemfile without much extra work, maintenance or conflicts.
 
 "Engineered" provides some groundwork for this scenario such as common 
 app/stylesheets and app/javascripts in your engine what will be compiled
-into master application public directory using Sass and Sprockets,
-so no more manual copying any more. 
+into your master application public directory using Sass and Sprockets.
 
 
 == Getting Started
