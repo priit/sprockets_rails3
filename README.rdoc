@@ -21,21 +21,21 @@ TODO: not released yet, hopefully very soon
 Rails 3 as possible.
 
 First some pattern, most of your engine stuff should go under subdir 
-using your gem name. Therefore pick your gem name as short and uniq as possible.
+using your gem name as namespace. 
+Therefore pick your gem name as short and uniq as possible.
 
 For example with name 'blogr':
 
   app/controllers/blogr/
-  app/models/blogr
-  app/views/blogr
+  app/models/blogr/
+  app/views/blogr/
 
-* Stylesheets go under app directory with your gem name as subdir:
+Stylesheets and javascripts should also go under app directory. 
+They will be compiled to public directory with Sass and Sprockets. 
+By the way Sass also supports pain old css files if you need:
 
-  app/stylesheets/blogr
-
-* Javascripts go also under app directory with your gem name as subdir:
-
-  app/javascripts/blogr
+  app/stylesheets/blogr/
+  app/javascripts/blogr/
 
 
 == Contributing
@@ -43,3 +43,10 @@ For example with name 'blogr':
 You are welcome to contribute fixes and ideas for improvements.
 
 Please use github issue tracking or send pull requests.
+
+
+== Credits
+
+* {Haml}[http://haml-lang.com]
+* {Sprockets}[http://getsprockets.org]
+* {Rack Sprockets}[http://github.com/kelredd/rack-sprockets]
