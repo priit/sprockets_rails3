@@ -1,13 +1,45 @@
 = Engineered
 
-Rails 3 engine will be "engineered" when you can include gem into your
+Engine will be "engineered" when you can include it's gem into your
 application Gemfile without much extra work, maintenance or conflicts. 
 
-"Engineered" provides some groundwork for this scenario such as common 
-app/stylesheets and app/javascripts in your engine what will be compiled
-into your master application public directory using Sass and Sprockets.
+However in reality with very high level engines it is a pipe dream. 
+That's why the gem is called "engineered", what hopefully will 
+remind you to avoid your engines become over-engineered.
 
 
 == Getting Started
 
+It's targeting Rails 3 engines.
+
 TODO: not released yet, hopefully very soon
+
+
+== What you get
+
+"Engineered" provides a minimal layer and follows as close to ruby and 
+Rails 3 as possible.
+
+First some pattern, most of your engine stuff should go under subdir 
+using your gem name. Therefore pick your gem name as short and uniq as possible.
+
+For example with name 'blogr':
+
+  app/controllers/blogr/
+  app/models/blogr
+  app/views/blogr
+
+* Stylesheets go under app directory with your gem name as subdir:
+
+  app/stylesheets/blogr
+
+* Javascripts go also under app directory with your gem name as subdir:
+
+  app/javascripts/blogr
+
+
+== Contributing
+
+You are welcome to contribute fixes and ideas for improvements.
+
+Please use github issue tracking or send pull requests.
