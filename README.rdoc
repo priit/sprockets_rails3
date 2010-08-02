@@ -1,7 +1,7 @@
 = Engineered
 
-Engine will be "engineered" when you can include it's gem into your
-application Gemfile without much extra work, maintenance or conflicts. 
+Engine will be "engineered" when you can include its gem into your
+application Gemfile without much extra effort, maintenance or conflicts. 
 
 However in reality with very high level engines it is a pipe dream. 
 That's why the gem is called "engineered", what hopefully will 
