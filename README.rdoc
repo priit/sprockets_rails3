@@ -19,16 +19,16 @@ TODO: not released yet, hopefully very soon
 
 == What you get
 
-"Engineered" provides a minimal layer to help you to use/develop gemified engines.
+"Engineered" provides a minimal layer to help develop and use gemified engines.
 
 You will get stylesheets and javascripts dirs under your engine app directory. 
 
-  engine_root/app/stylesheets/blogr/
-  engine_root/app/javascripts/blogr/
+  engine_root/app/stylesheets/
+  engine_root/app/javascripts/
 
-The content will be compiled into single file under master public directory 
-using Sass and Sprockets. So this way you can include many engines to 
-your master app and still have very nice single files:
+The content in there will be compiled into single file under master public directory 
+using Sass and Sprockets. This way you can include many engines to 
+your master app and still keep very nice single files, for example:
 
   master_root/public/stylesheets/complied/screen.css
   master_root/public/javascripts/compiled/application.js
@@ -36,7 +36,7 @@ your master app and still have very nice single files:
 
 == Contributing
 
-You are welcome to contribute fixes and ideas for improvements.
+You are welcome to contribute ideas and fixes.
 
 Please use github issue tracking or send pull requests.
 
