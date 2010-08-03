@@ -1,5 +1,7 @@
 = Engineered
 
+Lightweight layer to gemify your engines (Rails 3)
+
 Engine will be "engineered" when you can include its gem into your
 application Gemfile without much extra effort, maintenance or conflicts. 
 
@@ -17,25 +19,19 @@ TODO: not released yet, hopefully very soon
 
 == What you get
 
-"Engineered" provides a minimal layer and follows as close to ruby and 
-Rails 3 as possible.
+"Engineered" provides a minimal layer to help you to use/develop gemified engines.
 
-First some pattern, most of your engine stuff should go under subdir 
-using your gem name as namespace. 
-Therefore pick your gem name as short and uniq as possible.
+You will get stylesheets and javascripts dirs under your engine app directory. 
 
-For example with name 'blogr':
+  engine_root/app/stylesheets/blogr/
+  engine_root/app/javascripts/blogr/
 
-  app/controllers/blogr/
-  app/models/blogr/
-  app/views/blogr/
+The content will be compiled into single file under master public directory 
+using Sass and Sprockets. So this way you can include many engines to 
+your master app and still have very nice single files:
 
-Stylesheets and javascripts should also go under app directory. 
-They will be compiled to public directory with Sass and Sprockets. 
-By the way Sass also supports pain old css files if you need:
-
-  app/stylesheets/blogr/
-  app/javascripts/blogr/
+  master_root/public/stylesheets/complied/screen.css
+  master_root/public/javascripts/compiled/application.js
 
 
 == Contributing
