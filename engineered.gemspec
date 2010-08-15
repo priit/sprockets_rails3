@@ -19,6 +19,6 @@ Gem::Specification.new do |s|
   s.rubyforge_project = 'engineered'
 
   s.add_runtime_dependency('rails', ['>= 3.0.0.rc'])
-  s.add_runtime_dependency('haml', ['>= 3.0.14'])
+  s.add_runtime_dependency('haml', ['>= 3.0.16'])
   s.add_runtime_dependency('rack-sprockets', ['>= 1.0.3'])
 end
