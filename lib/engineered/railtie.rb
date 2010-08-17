@@ -21,6 +21,12 @@ module Engineered
      end
    end
 
+   initializer 'engineered.include_haml' do
+     # require haml, thus no need explicitly include haml gem into master app's Gemfile
+     # probably review it when haml/sass splits into seperate gems
+     require 'haml' 
+   end
+
    initializer 'engineered.configure_sass' do
      Engineered::Sass.configure!
    end
