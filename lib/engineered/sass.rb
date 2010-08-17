@@ -1,5 +1,4 @@
 require 'active_support/core_ext/module'
-require 'sass/plugin'
 
 module Engineered
   module Sass
@@ -8,6 +7,7 @@ module Engineered
       attr_accessor_with_default :compiled_css_path, 'public/stylesheets/compiled'
 
       def configure!
+        require 'sass/plugin'
         clean_defaults
         add_css_path_to_app
         add_css_path_to_engines

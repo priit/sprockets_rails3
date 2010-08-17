@@ -1,6 +1,5 @@
 require 'engineered'
 require 'rails'
-require 'sass/plugin'
 require 'rack/sprockets'
 
 module Engineered
