@@ -7,6 +7,7 @@ module Engineered
       attr_accessor_with_default :compiled_css_path, 'public/stylesheets/compiled'
 
       def configure!
+        # we require sass/plugin later because it requires rails initialization
         require 'sass/plugin'
         clean_defaults
         add_css_path_to_app
