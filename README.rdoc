@@ -1,32 +1,52 @@
 = Engineered
 
-"Engineered" provides a minimal layer to help you to develop and
-use gemified Rails 3 engines. 
+"Engineered" provides a minimal layer to help you to use and 
+develop gemified Rails 3 engines. 
 
-Ideally you should be able to add engine into your Gemfile without much extra 
-effort, maintenance or conflicts. However do not over-engineer your engines ;-)
+Ideally you should be able to add a gemified Rails 3 engine into your app Gemfile 
+without much extra effort, maintenance or conflicts. In reality it's a bit
+different story and kind of pipe dream to make or use high level dependencies. 
+
+However in some situations with very careful crafting there is some nish for it.
+By the way, I intentionally named it "Engineered", so you are constantly warned not
+to over-engineer your engines and still keep main focus on greating apps itself.
 
 
 == Getting Started
 
 It's targeting Rails 3 engines.
 
-TODO: not released yet, hopefully very soon
+TODO: not released yet, hopefully very soon, currently in spike state.
 
 
-== What you get
+== What you already get
 
-You will get stylesheets and javascripts dirs under your engine app directory. 
+You will get stylesheets and javascripts dirs under your engine directory,
+what will be merged into master app. 
 
   engine_root/app/stylesheets/
   engine_root/app/javascripts/
 
-The content will be compiled into single file under master public directory 
-using Sass and Sprockets. This way you can include many engines to 
-your master app and still keep very nice single files, for example:
+Content will be compiled into single file under master public directory 
+using Sass and Sprockets like following:
 
   master_root/public/stylesheets/complied/screen.css
   master_root/public/javascripts/compiled/application.js
+
+This way you can include several engines to your master app and 
+still keep master nice and clean without manual assets coping.
+
+
+
+== What in plan / todo
+
+* example engine app
+
+Currently poking out if we should add other assets similarly as css/js 
+are currently behaving. Personally I want to keep this gem as light as possible, 
+so only must have features should be included, cos no-one would like to see 
+bloated dependency itself.
+
 
 
 == Contributing
