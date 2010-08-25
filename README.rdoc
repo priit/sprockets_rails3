@@ -9,7 +9,7 @@ different story and kind of pipe dream to make or use high level dependencies.
 
 However in some situations with very careful crafting there is some nish for it.
 By the way, I intentionally named it "Engineered", so you are constantly warned not
-to over-engineer your engines and still keep main focus on greating apps itself.
+to over-engineer your engines and still keep main focus on greating application itself.
 
 
 == Getting Started
@@ -41,6 +41,7 @@ still keep master nice and clean without manual assets coping.
 == What in plan / todo
 
 * example engine app
+* add rake tasks
 
 Currently poking out if we should add other assets similarly as css/js 
 are currently behaving. Personally I want to keep this gem as light as possible, 
