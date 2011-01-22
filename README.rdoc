@@ -1,64 +1,21 @@
-= Engineered
+= Sprockets Rails 3
 
-"Engineered" provides a minimal layer to help you to use and 
-develop gemified Rails 3 engines. 
+Sprockets wrapper gem for Rails 3, so you can add it to your Gemfile and go!
 
-Ideally you should be able to add a gemified Rails 3 engine into your app Gemfile 
-without much extra effort, maintenance or conflicts. In reality it's a bit
-different story and kind of pipe dream to make or use high level dependencies. 
+= Usage
 
-However in some situations with very careful crafting there is some nish for it.
-By the way, I intentionally named it "Engineered", so you are constantly warned not
-to over-engineer your engines and still keep main focus on greating application itself.
+Add it to your Gemfile:
 
+  gem 'sprockets_rails3'
 
-== Getting Started
+= Help
 
-It's targeting Rails 3 engines.
+It's thin wrapper using Rack-Sprockets gem under the hood, 
+so please take a look it's readme for more info
 
-TODO: not released yet, hopefully very soon, currently in spike state.
-
-
-== What you already get
-
-You will get stylesheets and javascripts dirs under your engine directory,
-what will be merged into master app. 
-
-  engine_root/app/stylesheets/
-  engine_root/app/javascripts/
-
-Content will be compiled into single file under master public directory 
-using Sass and Sprockets like following:
-
-  master_root/public/stylesheets/complied/screen.css
-  master_root/public/javascripts/compiled/application.js
-
-This way you can include several engines to your master app and 
-still keep master nice and clean without manual assets coping.
-
-
-
-== What in plan / todo
-
-* example engine app
-* add rake tasks
-
-Currently poking out if we should add other assets similarly as css/js 
-are currently behaving. Personally I want to keep this gem as light as possible, 
-so only must have features should be included, cos no-one would like to see 
-bloated dependency itself.
-
-
-
-== Contributing
-
-You are welcome to contribute ideas and fixes.
-
-Please use github issue tracking or send pull requests.
-
+https://github.com/kelredd/rack-sprockets
 
 == Credits
 
-* {Haml}[http://haml-lang.com]
 * {Sprockets}[http://getsprockets.org]
 * {Rack Sprockets}[http://github.com/kelredd/rack-sprockets]
