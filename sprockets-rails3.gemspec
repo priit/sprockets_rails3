@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.description = 'Micro-engine wraps up rack-sprockets in order to avoid much configuration.' 
   s.authors     = ['Priit Tamboom']
   s.email       = 'priit@gitnation.com'
-  s.homepage    = 'http://github.com/priit/engineered'
+  s.homepage    = 'http://github.com/priit/sprockets-rails3'
 
   s.required_rubygems_version = '>= 1.3.7'
   s.files = Dir['lib/**/*', 'README*', 'LICENSE*']
